@@ -191,9 +191,8 @@
             <p>{{siteinfo.description}}</p>
           </div>
           <div class="col-lg-5">
-            <form action="{% url 'newletter'%}"  method="POST"  class="d-flex">
-            {% csrf_token %}
-            
+            <form action="{% url 'newletter' %}"  method="POST"  class="d-flex">
+            {% csrf_token %}           
                   {% if messages %}
                     <ul class="messages col-md-12 col-lg-12" >
                         {% for message in messages %}
