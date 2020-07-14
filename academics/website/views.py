@@ -239,3 +239,6 @@ def register(request):
     }
     return render(request, 'pages/register.html', datas)
 
+def deconnexion(request):
+    logout(request)
+    return redirect('login')

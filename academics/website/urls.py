@@ -12,4 +12,6 @@ urlpatterns = [
    path('register', views.register, name='register'),
 
    path('newletter', views.newletter, name='newletter'),
+
+    path('logout', views.deconnexion, name='logout'),
 ]
